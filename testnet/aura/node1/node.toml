@@ -1,0 +1,50 @@
+# doc: https://wiki.parity.io/Configuring-Parity-Ethereum.html#config-file
+
+[parity]
+chain = "spec.json"
+base_path = "data"
+auto_update = "none"
+
+[mining]
+usd_per_tx = "0"
+min_gas_price = 1000000000
+force_sealing = true
+gas_floor_target = "8000000"
+reseal_on_txs = "none"
+
+[misc]
+log_file = "parity.log"
+
+[account]
+password = [ "password.txt" ]
+
+
+# name of your node
+# Example: identity = "random_guy"
+identity = aura_performance_1
+
+# address of your "mining key"
+# Example: unlock = [ "0x8e1ca34f5718996f2531464f1323f959d8a8dd21" ]
+unlock = [ "0x28a92d5acdfeebfc78dcb4e58c53b5d14b8af8bd" ]
+
+# address of your "mining key"
+# Example: engine_signer = "0x8e1ca34f5718996f2531464f1323f959d8a8dd21"
+engine_signer = "0x28a92d5acdfeebfc78dcb4e58c53b5d14b8af8bd"
+
+[network]
+interface = "all"
+nat = "none"
+port = 30301
+reserved_peers = "reserved-peers"
+
+[rpc]
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_set", "parity_pubsub", "personal", "traces", "rpc", "shh", "shh_pubsub"]
+cors = ["all"]
+hosts = ["all"]
+interface = "all"
+port = 8541
+
+[websockets]
+interface = "all"
+origins = ["all"]
+port = 9541
