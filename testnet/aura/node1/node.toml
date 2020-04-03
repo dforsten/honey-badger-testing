@@ -9,7 +9,7 @@ auto_update = "none"
 usd_per_tx = "0"
 min_gas_price = 1000000000
 force_sealing = true
-gas_floor_target = "8000000"
+gas_floor_target = "100000000"
 reseal_on_txs = "none"
 
 [misc]
